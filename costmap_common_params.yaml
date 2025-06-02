@@ -1,0 +1,14 @@
+obstacle_range: 2.5  # khoach cah toi da robot xem cac diem laser de dua vao vat can
+raytrace_range: 3.0  # khoang cah ve tia tu robot toi laser-xoa vat can cu neu khong con o map
+footprint: [[-0.25, -0.2], [-0.25, 0.2], [0.25, 0.2], [0.25, -0.2]]
+inflation_radius: 0.35 # (*) ban kinh lan can xung quanh (tao vung an toan cho robot )
+transform_tolerance: 0.5 
+
+observation_sources: scan # cam bien lidar dung scan de quan sat vat can
+scan:
+  data_type: LaserScan
+  topic: scan
+  marking: true # cho phep them vat can khi du lieu quet duoc 
+  clearing: true #cho phep xoa vat can khi khong con phat hien nua
+
+map_type: costmap #su dung ban do costmap tim duong di toi uu, tranh khu vuc co nguy co va cham

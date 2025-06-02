@@ -1,0 +1,9 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_footprint
+  update_frequency: 1.0 #before: 5.0 cap nhat lai ban do toan cu tu nguon cam bien
+  publish_frequency: 0.5 #before 0.5
+  static_map: true  # su dung ban do tinh /map do slam tao 
+  transform_tolerance: 0.5 # do tre khi lay toa do giua cac frame
+  cost_scaling_factor: 8.0 # (*)he so dieu chinh vung chi phi xung quanh vat can (nho - di gan)
+  inflation_radius: 0.08 # (*) ban kinh vung anh huong cua vat can 

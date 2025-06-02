@@ -1,0 +1,19 @@
+base_global_planner: global_planner/GlobalPlanner
+base_local_planner: dwa_local_planner/DWAPlannerROS
+
+shutdown_costmaps: false # giu nguyen thong tin ban do khi robot khong hoat dong
+
+controller_frequency: 5.0 #before 5.0 tan so gui lenh van toc tu local planner
+controller_patience: 3.0
+
+planner_frequency: 0.5 # tan so cap nhat lai duong di toan cuc 
+planner_patience: 5.0  # thoi gian robot lap ke hoach lai neu tim duong that bai
+
+oscillation_timeout: 10.0 # tgian robot xac nhan duong di that bai
+oscillation_distance: 0.2
+
+conservative_reset_dist: 0.1 #distance from an obstacle at which it will unstuck itself
+
+cost_factor: 1.0
+neutral_cost: 55
+lethal_cost: 253
