@@ -1,31 +1,31 @@
 DWAPlannerROS:
-  max_trans_vel: 0.40 # van toc toi da(m/s)
+  max_trans_vel: 0.50
   min_trans_vel: 0.01
   max_vel_x: 0.50
   min_vel_x: -0.025
-  max_vel_y: 0.0 # Khong di chuyen ngang
+  max_vel_y: 0.0
   min_vel_y: 0.0
-  max_rot_vel: 0.30
-  min_rot_vel: -0.30
-  acc_lim_x: 1.0 # (*)gia toc toi da
+  max_rot_vel: 0.20
+  min_rot_vel: -0.20
+  acc_lim_x: 1.25
   acc_lim_y: 0.0
-  acc_lim_theta: 2.0 #(*)gia toc goc
-  acc_lim_trans: 1.0 # (*)gia toc tong tinh tien
+  acc_lim_theta: 3.0
+  acc_lim_trans: 1.25
 
-  prune_plan: true # (*) loai bo cac diem da vuot qua tren duong di (false - giu lai)
+  prune_plan: false
 
   xy_goal_tolerance: 0.25
   yaw_goal_tolerance: 0.1
   trans_stopped_vel: 0.1
   rot_stopped_vel: 0.1
-  sim_time: 3.0 #mo phong chuyen dong trong 3s
-  sim_granularity: 0.05
-  angular_sim_granularity: 0.05
-  path_distance_bias: 34.0 # uu tien bam theo duong di da dua ra
-  goal_distance_bias: 20.0 # tim duong ngan nhat den muc tieu
-  occdist_scale: 0.4 # tranh xa vat can hon
+  sim_time: 3.0
+  sim_granularity: 0.1
+  angular_sim_granularity: 0.1
+  path_distance_bias: 35.0
+  goal_distance_bias: 15.0
+  occdist_scale: 0.4
   twirling_scale: 0.0
-  stop_time_buffer: 0.5 # du doan thoi gian de dung lai truoc vat can
+  stop_time_buffer: 0.5
   oscillation_reset_dist: 0.05
   oscillation_reset_angle: 0.2
   forward_point_distance: 0.3
